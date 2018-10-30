@@ -44,4 +44,4 @@ EXPOSE 3128
 VOLUME ["${SQUID_CACHE_DIR}"]
 
 # TODO: Set the default CMD for the image
-CMD ["run"]
+CMD ["/usr/bin/squid -f /etc/squid/squid.conf -N"]
