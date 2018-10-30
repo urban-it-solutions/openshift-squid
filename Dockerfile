@@ -44,4 +44,4 @@ EXPOSE 3128
 VOLUME ["${SQUID_CACHE_DIR}"]
 
 # TODO: Set the default CMD for the image
-CMD ["usage"]
+CMD ["run"]
