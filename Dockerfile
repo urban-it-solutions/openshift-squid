@@ -31,6 +31,7 @@ COPY ./.s2i/bin /usr/libexec/s2i
 RUN chown -R squid:squid /etc/squid
 RUN chown -R squid:squid /var/log/squid
 RUN chmod -R 775 /var/log/squid
+RUN chmod -R 775 /etc/squid
 
 
 # This default user is created in the openshift/base-centos7 image
