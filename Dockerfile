@@ -30,8 +30,8 @@ COPY ./.s2i/bin /usr/libexec/s2i
 # TODO: Drop the root user and make the content of /opt/app-root owned by user 1001
 RUN chown -R squid:squid /etc/squid
 RUN chown -R squid:squid /var/log/squid
-RUN chmod -R 775 /var/log/squid
-RUN chmod -R 775 /etc/squid/squid.conf
+RUN chmod -R 777 /var/log/squid
+RUN chmod -R 777 /etc/squid/squid.conf
 
 
 # This default user is created in the openshift/base-centos7 image
